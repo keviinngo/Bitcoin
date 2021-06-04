@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />  
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="font-awesome.css"> 
+        <link rel="stylesheet" href="style.css">
+        <title>JavaScript</title>
+    </head>
+    <body>  
+        <header class="header-area ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="main-nav">                     
+                            <a href="index.html" class="logo"><em>Bitcoin</em></a>
+                            <ul class="nav">
+                                <li class="scroll-to-section"><a href="#call-to-action">About</a></li>
+                            </ul>                                   
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="bgimg"></div>
+        <div class="padding"></div>
+        <div class="container">
+            <table class="table table-striped table-hover" id="list">
+                <thead>
+                    <tr>
+                        <th>Days</th>
+                        <th>High</th>
+                        <th>Low</th>
+                        <th>Open</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="info.Data.Data">
+
+                </tbody>                   
+            </table>      
+            <button onclick="prevPage()" id="btnPrev" class="btn btn-success">Previous</button>
+            <button onclick="page(1)" class="btn btn-success btn-sml">1</button>
+            <button onclick="page(2)" class="btn btn-success btn-sml">2</button>
+            <button onclick="page(3)" class="btn btn-success btn-sml">3</button>
+            <button onclick="page(4)" class="btn btn-success btn-sml">4</button>
+            <button onclick="page(5)" class="btn btn-success btn-sml">5</button>
+            <button onclick="nextPage()" id="btnNext" class="btn btn-success">Next</button>
+        </div>
+        <div class="padding"></div>
+        <section class="section" id="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="cta-content">
+                            <h2><em>About</em></h2>
+                            <p>
+                                This website lists out the last 100 days of bitcoin value on the crypto market. 
+                                Launched in 2009, bitcoin is the world's largest cryptocurrency by market capitalization.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
